@@ -1,6 +1,5 @@
 package com.github.izmailoff.implicits
 
-
 /**
  * Provides syntax sugar for testing if a variable is in a closed interval.
  * Sample use:
@@ -15,14 +14,17 @@ class Between[T <% Ordered[T]](val value: Option[T]) {
     if (value.get >= low)
       new Between(value)
     else
-      new Between(None: Option[T]) 
+      new Between(None: Option[T])
 
-  def and(high: T) = value match { case Some(v) => v <= high case None => false }
+  def and(high: T) = value match {
+    case Some(v) => v <= high
+    case None => false
+  }
 }
 
 /**
  * Single import for use of implicit 'between'.
- * See [[Between]] for more information.
+ * See [[com.github.izmailoff.implicits.Between]] for more information.
  */
 object BetweenImports {
   type Between[T] = com.github.izmailoff.implicits.Between[T]
