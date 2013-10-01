@@ -12,5 +12,5 @@ libraryDependencies += "junit" % "junit" % "4.11" % "test"
 
 libraryDependencies += "org.specs2" % "specs2_2.10" % "1.14" % "test"
 
-seq(ScctPlugin.instrumentSettings : _*)
+seq(sbt.scct.ScctPlugin.instrumentSettings : _*)
 
