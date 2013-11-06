@@ -1,3 +1,7 @@
+scalaVersion := "2.10.3"
+
+sbtVersion := "0.13.0"
+
 resolvers += Classpaths.typesafeResolver
 
 resolvers ++= Seq("snapshots"     at "http://oss.sonatype.org/content/repositories/snapshots",

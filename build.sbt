@@ -4,6 +4,8 @@ version := "1.0.0"
 
 scalaVersion := "2.10.3"
 
+sbtVersion := "0.13.0"
+
 scalacOptions ++= Seq("-deprecation")
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.0.M6-SNAP9" % "test"
