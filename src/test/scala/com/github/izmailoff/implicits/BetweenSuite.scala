@@ -66,6 +66,8 @@ class BetweenSuite extends Specification with DataTables {
        val правда = true
 
        два между один и три must be equalTo правда
+
+       два.между(один).и(три).must(be).equalTo(правда)
     }
 
     // TODO: consider doing this or remove it:
