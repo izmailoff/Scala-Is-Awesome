@@ -59,6 +59,15 @@ class BetweenSuite extends Specification with DataTables {
       }
     }
 
+    "нормально работать на русском" in {
+       val один = 1
+       val два = 2
+       val три = 3
+       val правда = true
+
+       два между один и три must be equalTo правда
+    }
+
     // TODO: consider doing this or remove it:
 //    "correctly work with various INT and DOUBLE ranges" in {
 //      "value between" | "low and" | "high" | "is " |

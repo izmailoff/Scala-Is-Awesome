@@ -20,6 +20,10 @@ class Between[T <% Ordered[T]](val value: Option[T]) {
     case Some(v) => v <= high
     case None => false
   }
+
+  def между(нижПредел: T) = between(нижПредел)
+
+  def и(верхПредел: T) = and(верхПредел)
 }
 
 /**
